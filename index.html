@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Selfinger | Software & ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dennis Selfinger</h1>
+        <p class="subtitle">Recent B.S. Computer Science Graduate • Machine Learning & Software Engineer</p>
+        <p>Philadelphia, PA | dselfinger.dev@gmail.com </p>
+        <p class="social-links">
+            <a href="https://dennisselfingerspage.com">Portfolio</a> | 
+            <a href="https://github.com/dself-dev">GitHub</a> | 
+            <a href="https://hub.docker.com/u/dennis2026">Docker Hub</a>
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            Recent Computer Science graduate (December 2025, 3.9 GPA, Dean’s List) passionate about building scalable systems, 
+            financial machine learning, time-series modeling, and secure backend architectures. 
+            I love working with data of all kinds and turning it into actionable insights.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Languages</h3>
+                <p>Python, Java, SQL, Bash, PowerShell, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Frameworks & Tools</h3>
+                <p>FastAPI, Flask, Docker, Git, AWS, Netmiko, LangChain, Ollama</p>
+            </div>
+            <div class="skill-card">
+                <h3>Databases & AI/ML</h3>
+                <p>MySQL, SQL Server, MongoDB, FAISS, Neural Networks, RAG, Pandas, yfinance</p>
+            </div>
+            <div class="skill-card">
+                <h3>Other</h3>
+                <p>Secure Coding, Networking, Technical Indicators, AWS Cloud Practitioner (in progress)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Stock Prediction & Market Intelligence Platform</h3>
+                <p><strong>Full-Stack FastAPI + Machine Learning</strong></p>
+                <ul>
+                    <li>End-to-end platform predicting next-day stock & crypto prices using 9+ technical indicators and neural network ensemble</li>
+                    <li>Modular architecture with user authentication and responsive frontend</li>
+                    <li>Fully Dockerized and ready for cloud deployment</li>
+                </ul>
+                <p><strong>Tech:</strong> FastAPI, Docker, Pandas, Neural Networks</p>
+                <a href="https://github.com/dself-dev/stock_prediction" class="btn" target="_blank">GitHub</a>
+                <a href="https://hub.docker.com/r/dennis2026/stock-prediction-app" class="btn" target="_blank">Docker Hub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Local Legal Research RAG Agent</h3>
+                <p><strong>Private Offline AI Research Assistant</strong></p>
+                <ul>
+                    <li>Fully local AI agent using LangChain, Ollama, and FAISS over legal PDFs</li>
+                    <li>Strict RAG with fallback tools to prevent hallucinations</li>
+                    <li>Runs 100% offline with structured output</li>
+                </ul>
+                <p><strong>Tech:</strong> LangChain, Ollama, FAISS</p>
+                <a href="https://github.com/dself-dev/para_legal_rag_agent" class="btn" target="_blank">GitHub </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="experience-item">
+            <h3>Janitorial & Maintenance Technician — Essendant, Oaks, PA</h3>
+            <p><strong>November 2024 – Present</strong></p>
+            <p>Facility maintenance, electronic work orders, and EPA-compliant hazardous waste handling.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Seasonal Customer Service Associate — Target, Oaks, PA</h3>
+            <p><strong>October 2024 – March 2025</strong></p>
+            <p>Customer service and cash handling while completing final semester of Computer Science studies.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Sales & Operations — Quality by Craig, PA</h3>
+            <p><strong>2014 – 2018</strong></p>
+            <p>Managed sales, inventory, crew scheduling, and construction projects for 50–60 corporate properties.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="experience-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>Southern New Hampshire University — Graduated December 2025 | GPA: 3.9 | Dean’s List</p>
+        </div>
+        <div class="experience-item">
+            <h3>Psychology and Computer Science</h3>
+            <p>New England College, Henniker, NH (2019 – Transfer)</p>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <ul class="cert-list">
+            <li>Meta Front End & Back End Development</li>
+            <li>University of Michigan Python Programming</li>
+            <li>Google System Administration & Security</li>
+            <li>AWS Cloud Practitioner (in progress)</li>
+        </ul>
+    </section>
+    
+    <!-- ====================== CONTACT SECTION ====================== -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out if you're hiring or have any questions.</p>
+        
+        <form action="https://formsubmit.co/dselfinger.dev@gmail.com" method="POST" class="contact-form">
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Hi Dennis, I saw your portfolio..."></textarea>
+            </div>
+
+            <!-- Anti-spam honeypot -->
+            <input type="text" name="_honey" style="display:none;">
+
+            <!-- Redirect after successful submission (change this later if you want) -->
+            <input type="hidden" name="_next" value="https://dennisselfingerspage.com/thankyou.html">
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer>
+        <p>&copy; 2026 Dennis Selfinger • Philadelphia, PA</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
