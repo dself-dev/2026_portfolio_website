@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Selfinger | Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.45;
+            background: #f8f8f8;
+        }
+        
+        .resume {
+            max-width: 920px;
+            margin: 30px auto;
+            background: white;
+            padding: 48px 58px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            font-size: 15.2px;
+        }
+        
+        .name {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        
+        .contact-line {
+            font-size: 14.8px;
+            margin-bottom: 22px;
+        }
+        
+        .contact-line a {
+            color: #1e40af;
+            text-decoration: none;
+        }
+        
+        .contact-line a:hover {
+            text-decoration: underline;
+        }
+        
+        .blue-line {
+            height: 3px;
+            background: #1e40af;
+            margin: 22px 0 24px 0;
+        }
+        
+        .section-title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .project-title {
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+        
+        .project-subtitle {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        
+        ul {
+            list-style-type: disc;
+            padding-left: 22px;
+            margin-top: 4px;
+        }
+        
+        li {
+            margin-bottom: 7px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        
+        .job-title {
+            font-weight: 700;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 24px;
+        }
+        
+        @media print {
+            .resume {
+                box-shadow: none;
+                padding: 35px 45px;
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- NAME + CONTACT (NOW ALL LINKS) -->
+        <h1 class="name">Dennis Selfinger</h1>
+        <div class="contact-line">
+            <a href="mailto:dselfinger.dev@gmail.com">dselfinger.dev@gmail.com</a> | 
+             
+            Philadelphia, PA&nbsp;&nbsp;&nbsp;&nbsp;
+            Portfolio: <a href="https://dself-dev.github.io/2026_portfolio_website/" target="_blank">https://dself-dev.github.io/2026_portfolio_website/</a> | 
+            GitHub: <a href="https://github.com/dself-dev" target="_blank">github.com/dself-dev</a> | 
+            Docker Hub: <a href="https://hub.docker.com/u/dennis2026" target="_blank">hub.docker.com/u/dennis2026</a>
+        </div>
+
+        <div class="blue-line"></div>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+            Recent B.S. Computer Science graduate (December 2025, GPA: 3.88, Dean’s List) with 
+            hands-on experience building Python applications, FastAPI backends, and data-driven 
+            projects. Experience with Python, SQL, FastAPI, Pandas, and Docker through personal 
+            projects. Seeking an entry- to junior-level role in software engineering, machine learning, 
+            data, or cloud-focused development.
+        </p>
+
+        <div class="blue-line"></div>
+
+        <!-- EDUCATION -->
+        <h2 class="section-title">Education</h2>
+        <p><strong>Southern New Hampshire University</strong> — B.S. in Computer Science, Focus in Software Engineering</p>
+        <p class="text-gray-700">December 2025 | GPA: 3.88 | Dean’s List</p>
+        
+        <p class="mt-6"><strong>New England College</strong> — Psychology</p>
+        <p class="text-gray-700">2019</p>
+
+        <div class="blue-line"></div>
+
+        <!-- TECHNICAL SKILLS -->
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div>• <strong>Languages:</strong> Python, SQL</div>
+            <div>• <strong>Frameworks / Tools:</strong> FastAPI, Flask, Docker, Git, LangChain, Ollama</div>
+            <div>• <strong>Data / ML:</strong> Pandas, RAG, yfinance, Technical Indicators</div>
+            <div>• <strong>Databases / Storage:</strong> MySQL, SQLAlchemy, FAISS</div>
+        </div>
+
+        <div class="blue-line"></div>
+
+        <!-- PROJECTS -->
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="mb-8">
+            <p class="project-title">Stock Prediction &amp; Market Intelligence Platform | Python, FastAPI, Pandas, Docker</p>
+            <p class="project-subtitle">GitHub | Docker Hub</p>
+            <ul>
+                <li>Built a full-stack FastAPI application that predicts next-day stock and crypto price movement using time-series data and 9+ technical indicators, including RSI, Bollinger Bands, and MACD.</li>
+                <li>Developed a modular ML pipeline using regression models for price prediction and classification models for direction forecasting, along with user authentication and frontend support for user interaction.</li>
+                <li>Dockerized the application to improve portability, deployment consistency, and separation of components.</li>
+            </ul>
+        </div>
+        
+        <div class="mb-8">
+            <p class="project-title">Local Legal Research RAG Agent | Python, LangChain, Ollama, FAISS</p>
+            <ul>
+                <li>Developed a fully offline RAG system for legal document analysis with retrieval-based citation support and hallucination safeguards.</li>
+            </ul>
+        </div>
+        
+        <div>
+            <p class="project-title">C++ Password Manager | C++</p>
+            <ul>
+                <li>Built a command-line password manager supporting password storage, retrieval, deletion, and random password generation.</li>
+                <li>Applied core C++ concepts including classes, STL containers, and efficient key-based lookup.</li>
+            </ul>
+        </div>
+
+        <div class="blue-line"></div>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="mb-8">
+            <div class="job-header">
+                <span class="job-title">Janitorial &amp; Maintenance Technician — Essendant, Oaks, PA</span>
+                <span class="text-sm">November 2024 – Present</span>
+            </div>
+            <ul>
+                <li>Managed daily facility operations and completed electronic work orders using internal systems.</li>
+                <li>Maintained compliance with EPA guidelines for CAA waste handling and disposal, including proper segregation, container use, and procedure adherence.</li>
+            </ul>
+        </div>
+        
+        <div class="mb-8">
+            <div class="job-header">
+                <span class="job-title">Seasonal Customer Service Associate — Target, Oaks, PA</span>
+                <span class="text-sm">October 2024 – March 2025</span>
+            </div>
+            <ul>
+                <li>Delivered customer service and processed transactions during peak retail operations while balancing work and academic responsibilities.</li>
+            </ul>
+        </div>
+        
+        <div>
+            <div class="job-header">
+                <span class="job-title">Sales &amp; Operations — Quality by Craig, PA</span>
+                <span class="text-sm">2014 – 2018</span>
+            </div>
+            <ul>
+                <li>Managed scheduling, inventory, client coordination, and project execution for corporate clients.</li>
+            </ul>
+        </div>
+
+        <div class="blue-line"></div>
+
+        <!-- CERTIFICATES -->
+        <h2 class="section-title">Certificates</h2>
+        <ul class="columns-2 gap-x-12 text-[15.2px]">
+            <li>Meta Front-End Development Professional Certificate</li>
+            <li>Meta Back-End Development Professional Certificate</li>
+            <li>University of Michigan: Python for Everybody</li>
+            <li>Google IT Support Professional Certificate</li>
+            <li>CodeSignal: Getting Started with SQL</li>
+            <li>AWS Cloud Practitioner (in progress)</li>
+        </ul>
+    </div>
+</body>
+</html>
