@@ -21,6 +21,7 @@
             padding: 48px 58px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.12);
             font-size: 15.2px;
+            position: relative;
         }
         
         .name {
@@ -92,8 +93,31 @@
             grid-template-columns: 1fr 1fr;
             gap: 8px 24px;
         }
+
+        /* Back to Home Button */
+        .back-button {
+            position: absolute;
+            top: 30px;
+            right: 58px;
+            background: #1e40af;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
         
+        .back-button:hover {
+            background: #1e3a8a;
+            transform: translateY(-1px);
+        }
+
         @media print {
+            .back-button {
+                display: none;
+            }
             .resume {
                 box-shadow: none;
                 padding: 35px 45px;
@@ -105,12 +129,14 @@
 </head>
 <body>
     <div class="resume">
-        <!-- NAME + CONTACT (NOW ALL LINKS) -->
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-button">← Back to Home</a>
+
+        <!-- NAME + CONTACT (Phone number removed) -->
         <h1 class="name">Dennis Selfinger</h1>
         <div class="contact-line">
             <a href="mailto:dselfinger.dev@gmail.com">dselfinger.dev@gmail.com</a> | 
-             
-            Philadelphia, PA&nbsp;&nbsp;&nbsp;&nbsp;
+            Philadelphia, PA<br>
             Portfolio: <a href="https://dself-dev.github.io/2026_portfolio_website/" target="_blank">https://dself-dev.github.io/2026_portfolio_website/</a> | 
             GitHub: <a href="https://github.com/dself-dev" target="_blank">github.com/dself-dev</a> | 
             Docker Hub: <a href="https://hub.docker.com/u/dennis2026" target="_blank">hub.docker.com/u/dennis2026</a>
@@ -121,11 +147,9 @@
         <!-- PROFESSIONAL SUMMARY -->
         <h2 class="section-title">Professional Summary</h2>
         <p>
-            Recent B.S. Computer Science graduate (December 2025, GPA: 3.88, Dean’s List) with 
-            hands-on experience building Python applications, FastAPI backends, and data-driven 
-            projects. Experience with Python, SQL, FastAPI, Pandas, and Docker through personal 
-            projects. Seeking an entry- to junior-level role in software engineering, machine learning, 
-            data, or cloud-focused development.
+            Recent B.S. Computer Science graduate (December 2025, GPA: 3.88, Dean’s List) with hands-on experience building Python applications, FastAPI backends, and data-driven projects. 
+            Experience with Python, SQL, FastAPI, Pandas, and Docker through personal projects. Quick learner who focuses on writing clean, testable code using pytest. 
+            Seeking an entry- to junior-level role in software engineering, machine learning, data, or cloud-focused development.
         </p>
 
         <div class="blue-line"></div>
@@ -151,6 +175,25 @@
 
         <div class="blue-line"></div>
 
+        <!-- SKILLS & TECHNOLOGIES USED IN PROJECTS -->
+        <h2 class="section-title">Skills &amp; Technologies Used in Projects</h2>
+        <ul class="columns-2 gap-x-12">
+            <li>Large Language Models (LLMs)</li>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Sentiment Analysis</li>
+            <li>Machine Learning Pipelines</li>
+            <li>MLOps Concepts</li>
+            <li>Data Scraping &amp; Web Scraping</li>
+            <li>yfinance</li>
+            <li>Technical Indicators (RSI, MACD, Bollinger Bands, etc.)</li>
+            <li>LangChain</li>
+            <li>Ollama</li>
+            <li>RESTful API Development, Java</li>
+            <li>Containerization &amp; Deployment</li>
+        </ul>
+
+        <div class="blue-line"></div>
+
         <!-- PROJECTS -->
         <h2 class="section-title">Projects</h2>
         
@@ -160,6 +203,8 @@
             <ul>
                 <li>Built a full-stack FastAPI application that predicts next-day stock and crypto price movement using time-series data and 9+ technical indicators, including RSI, Bollinger Bands, and MACD.</li>
                 <li>Developed a modular ML pipeline using regression models for price prediction and classification models for direction forecasting, along with user authentication and frontend support for user interaction.</li>
+                <li>Wrote unit tests using pytest to ensure code reliability and maintainability.</li>
+                <li>Currently integrating NLP techniques for sentiment analysis by scraping financial news articles and other relevant sites to enhance prediction accuracy.</li>
                 <li>Dockerized the application to improve portability, deployment consistency, and separation of components.</li>
             </ul>
         </div>
@@ -167,7 +212,7 @@
         <div class="mb-8">
             <p class="project-title">Local Legal Research RAG Agent | Python, LangChain, Ollama, FAISS</p>
             <ul>
-                <li>Developed a fully offline RAG system for legal document analysis with retrieval-based citation support and hallucination safeguards.</li>
+                <li>Developed a fully offline RAG system for legal document analysis using Large Language Models (LLMs) with retrieval-based citation support and hallucination safeguards.</li>
             </ul>
         </div>
         
@@ -205,13 +250,26 @@
             </ul>
         </div>
         
+        <div class="mb-8">
+            <div class="job-header">
+                <span class="job-title">General Laborer — Building Memories Custom Contracting</span>
+                <span class="text-sm">2018 - 2023</span>
+            </div>
+            <ul>
+                <li>Provided customer service both in-person and via digital channels.</li>
+                <li>Performed labor and installations.</li>
+                <li>Managed project timelines and coordinated crew activities to optimize costs.</li>
+            </ul>
+        </div>
+        
         <div>
             <div class="job-header">
                 <span class="job-title">Sales &amp; Operations — Quality by Craig, PA</span>
                 <span class="text-sm">2014 – 2018</span>
             </div>
             <ul>
-                <li>Managed scheduling, inventory, client coordination, and project execution for corporate clients.</li>
+                <li>Managed scheduling, inventory, client coordination, and project execution for clients.</li>
+                <li>Managed corporate snow plowing accounts in winter months and roofing installation and sales year round.</li>
             </ul>
         </div>
 
