@@ -87,7 +87,7 @@
         .job-title {
             font-weight: 700;
         }
-        
+
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -132,10 +132,11 @@
         <!-- Back to Home Button -->
         <a href="index.html" class="back-button">← Back to Home</a>
 
-        <!-- NAME + CONTACT (Phone number removed) -->
+        <!-- NAME + CONTACT -->
         <h1 class="name">Dennis Selfinger</h1>
         <div class="contact-line">
-            <a href="mailto:dselfinger.dev@gmail.com">dselfinger.dev@gmail.com</a> | 
+            Email: <a href="mailto:dselfinger.dev@gmail.com">dselfinger.dev@gmail.com</a> | 
+            
             Philadelphia, PA<br>
             Portfolio: <a href="https://dself-dev.github.io/2026_portfolio_website/" target="_blank">https://dself-dev.github.io/2026_portfolio_website/</a> | 
             GitHub: <a href="https://github.com/dself-dev" target="_blank">github.com/dself-dev</a> | 
@@ -147,8 +148,9 @@
         <!-- PROFESSIONAL SUMMARY -->
         <h2 class="section-title">Professional Summary</h2>
         <p>
-            Recent B.S. Computer Science graduate (December 2025, GPA: 3.88, Dean’s List) with hands-on experience building Python applications, FastAPI backends, and data-driven projects. 
-            Experience with Python, SQL, FastAPI, Pandas, and Docker through personal projects. Quick learner who focuses on writing clean, testable code using pytest. 
+            Recent B.S. Computer Science graduate (December 2025, GPA: 3.88, Dean's List) with hands-on experience building Python applications, 
+            FastAPI backends, and data-driven projects. Experienced with Python, SQL, FastAPI, Pandas, and Docker through personal projects. 
+            Quick learner focused on writing clean, testable code using pytest. 
             Seeking an entry- to junior-level role in software engineering, machine learning, data, or cloud-focused development.
         </p>
 
@@ -159,38 +161,38 @@
         <p><strong>Southern New Hampshire University</strong> — B.S. in Computer Science, Focus in Software Engineering</p>
         <p class="text-gray-700">December 2025 | GPA: 3.88 | Dean’s List</p>
         
-        <p class="mt-6"><strong>New England College</strong> — Psychology</p>
-        <p class="text-gray-700">2019</p>
+        <p class="mt-6"><strong>New England College</strong> — Psychology and Computer Science</p>
+        <p class="text-gray-700">2019 (Transfer)</p>
 
         <div class="blue-line"></div>
 
         <!-- TECHNICAL SKILLS -->
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
-            <div>• <strong>Languages:</strong> Python, SQL</div>
-            <div>• <strong>Frameworks / Tools:</strong> FastAPI, Flask, Docker, Git, LangChain, Ollama</div>
-            <div>• <strong>Data / ML:</strong> Pandas, RAG, yfinance, Technical Indicators</div>
-            <div>• <strong>Databases / Storage:</strong> MySQL, SQLAlchemy, FAISS</div>
+            <div>• <strong>Languages:</strong> Python, SQL, JavaScript, Java, Bash</div>
+            <div>• <strong>Frameworks:</strong> FastAPI, Flask, Node.js, Express.js</div>
+            <div>• <strong>Databases:</strong> MySQL, MongoDB, Mongoose, FAISS</div>
+            <div>• <strong>Tools & Platforms:</strong> Docker, Git, LangChain, Ollama, Pandas</div>
         </div>
 
         <div class="blue-line"></div>
 
-        <!-- SKILLS & TECHNOLOGIES USED IN PROJECTS -->
-        <h2 class="section-title">Skills &amp; Technologies Used in Projects</h2>
-        <ul class="columns-2 gap-x-12">
-            <li>Large Language Models (LLMs)</li>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Sentiment Analysis</li>
-            <li>Machine Learning Pipelines</li>
-            <li>MLOps Concepts</li>
-            <li>Data Scraping &amp; Web Scraping</li>
-            <li>yfinance</li>
-            <li>Technical Indicators (RSI, MACD, Bollinger Bands, etc.)</li>
-            <li>LangChain</li>
-            <li>Ollama</li>
-            <li>RESTful API Development, Java</li>
-            <li>Containerization &amp; Deployment</li>
-        </ul>
+        <!-- SKILLS USED IN PROJECTS -->
+        <h2 class="section-title">Skills Used in Projects</h2>
+        <div class="skills-grid" style="column-count: 2; column-gap: 40px; font-size: 15px;">
+            <div>• FAISS (Vector Database)</div>
+            <div>• LangChain &amp; Ollama</div>
+            <div>• MongoDB &amp; Mongoose</div>
+            <div>• Docker &amp; Containerization</div>
+            <div>• FastAPI &amp; RESTful APIs</div>
+            <div>• Retrieval-Augmented Generation (RAG)</div>
+            <div>• Large Language Models (LLMs)</div>
+            <div>• Machine Learning Pipelines</div>
+            <div>• Pandas &amp; Data Processing</div>
+            <div>• Technical Indicators (RSI, MACD, Bollinger Bands, etc.)</div>
+            <div>• Sentiment Analysis (NLP)</div>
+            <div>• Pytest (Unit Testing)</div>
+        </div>
 
         <div class="blue-line"></div>
 
@@ -198,29 +200,29 @@
         <h2 class="section-title">Projects</h2>
         
         <div class="mb-8">
-            <p class="project-title">Stock Prediction &amp; Market Intelligence Platform | Python, FastAPI, Pandas, Docker</p>
-            <p class="project-subtitle">GitHub | Docker Hub</p>
+            <p class="project-title">Stock Prediction & Market Intelligence Platform</p>
+            <p class="project-subtitle">Python, FastAPI, Pandas, Docker | <a href="https://github.com/dself-dev/stock_prediction" target="_blank">GitHub</a> | <a href="https://hub.docker.com/r/dennis2026/stock-prediction-app" target="_blank">Docker Hub</a></p>
             <ul>
-                <li>Built a full-stack FastAPI application that predicts next-day stock and crypto price movement using time-series data and 9+ technical indicators, including RSI, Bollinger Bands, and MACD.</li>
-                <li>Developed a modular ML pipeline using regression models for price prediction and classification models for direction forecasting, along with user authentication and frontend support for user interaction.</li>
-                <li>Wrote unit tests using pytest to ensure code reliability and maintainability.</li>
-                <li>Currently integrating NLP techniques for sentiment analysis by scraping financial news articles and other relevant sites to enhance prediction accuracy.</li>
-                <li>Dockerized the application to improve portability, deployment consistency, and separation of components.</li>
+                <li>Built a full-stack FastAPI application that predicts next-day stock and cryptocurrency price movement using time-series data and 9+ technical indicators.</li>
+                <li>Developed modular ML pipelines and currently integrating NLP sentiment analysis.</li>
+                <li>Fully Dockerized for consistent deployment.</li>
             </ul>
         </div>
         
         <div class="mb-8">
-            <p class="project-title">Local Legal Research RAG Agent | Python, LangChain, Ollama, FAISS</p>
+            <p class="project-title">Local Legal Research RAG Agent</p>
+            <p class="project-subtitle">Python, LangChain, Ollama, FAISS</p>
             <ul>
-                <li>Developed a fully offline RAG system for legal document analysis using Large Language Models (LLMs) with retrieval-based citation support and hallucination safeguards.</li>
+                <li>Developed a fully offline RAG system for legal document analysis with hallucination safeguards.</li>
             </ul>
         </div>
         
-        <div>
-            <p class="project-title">C++ Password Manager | C++</p>
+        <div class="mb-8">
+            <p class="project-title">Travlr Getaways Full-Stack Web Application</p>
+            <p class="project-subtitle">Node.js, Express.js, MongoDB, Mongoose, Handlebars</p>
             <ul>
-                <li>Built a command-line password manager supporting password storage, retrieval, deletion, and random password generation.</li>
-                <li>Applied core C++ concepts including classes, STL containers, and efficient key-based lookup.</li>
+                <li>Built a full-stack travel management application using MVC architecture and RESTful APIs.</li>
+                <li>Implemented MongoDB database seeding and custom middleware.</li>
             </ul>
         </div>
 
@@ -231,12 +233,12 @@
         
         <div class="mb-8">
             <div class="job-header">
-                <span class="job-title">Janitorial &amp; Maintenance Technician — Essendant, Oaks, PA</span>
+                <span class="job-title">Janitorial & Maintenance Technician — Essendant, Oaks, PA</span>
                 <span class="text-sm">November 2024 – Present</span>
             </div>
             <ul>
-                <li>Managed daily facility operations and completed electronic work orders using internal systems.</li>
-                <li>Maintained compliance with EPA guidelines for CAA waste handling and disposal, including proper segregation, container use, and procedure adherence.</li>
+                <li>Managed daily facility operations and completed electronic work orders.</li>
+                <li>Maintained EPA compliance for hazardous waste handling.</li>
             </ul>
         </div>
         
@@ -246,30 +248,27 @@
                 <span class="text-sm">October 2024 – March 2025</span>
             </div>
             <ul>
-                <li>Delivered customer service and processed transactions during peak retail operations while balancing work and academic responsibilities.</li>
+                <li>Delivered excellent customer service while balancing academic responsibilities.</li>
             </ul>
         </div>
         
         <div class="mb-8">
             <div class="job-header">
                 <span class="job-title">General Laborer — Building Memories Custom Contracting</span>
-                <span class="text-sm">2018 - 2023</span>
+                <span class="text-sm">2018 – 2023</span>
             </div>
             <ul>
-                <li>Provided customer service both in-person and via digital channels.</li>
-                <li>Performed labor and installations.</li>
-                <li>Managed project timelines and coordinated crew activities to optimize costs.</li>
+                <li>Provided customer service and managed project timelines and crew coordination.</li>
             </ul>
         </div>
         
         <div>
             <div class="job-header">
-                <span class="job-title">Sales &amp; Operations — Quality by Craig, PA</span>
+                <span class="job-title">Sales & Operations — Quality by Craig, PA</span>
                 <span class="text-sm">2014 – 2018</span>
             </div>
             <ul>
-                <li>Managed scheduling, inventory, client coordination, and project execution for clients.</li>
-                <li>Managed corporate snow plowing accounts in winter months and roofing installation and sales year round.</li>
+                <li>Managed sales, inventory, scheduling, and construction projects for corporate clients.</li>
             </ul>
         </div>
 

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Selfinger | Software & ML Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
 
     <header>
         <h1>Dennis Selfinger</h1>
         <p class="subtitle">Recent B.S. Computer Science Graduate • Machine Learning & Software Engineer</p>
-        <p>Philadelphia, PA | dselfinger.dev@gmail.com </p>
+        <p>Philadelphia, PA | dselfinger.dev@gmail.com</p>
         <p class="social-links">
             <a href="https://dennisselfingerspage.com">Portfolio</a> | 
             <a href="https://github.com/dself-dev">GitHub</a> | 
@@ -33,38 +33,55 @@
 
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>
-            Recent Computer Science graduate (December 2025, 3.9 GPA, Dean’s List) passionate about building scalable systems, 
-            financial machine learning, time-series modeling, and secure backend architectures. 
-            I love working with data of all kinds and turning it into actionable insights.
-        </p>
+       <p>
+        Recent Computer Science graduate (December 2025, 3.9 GPA, Dean’s List) who is passionate about all things tech — from full-stack development 
+        and cloud technologies to machine learning and secure systems. As an entry-level developer, I’m eager to broaden my professional experience, 
+        continuously learn, and apply my skills in real-world environments. I have no problem dedicating time outside of work to stay current with 
+        new technologies and keep improving. I especially enjoy collaborating with clients and team members to understand their needs and deliver 
+        solutions that create real value. When I’m not coding, you can find me enjoying the outdoors.
+    </p>
     </section>
 
-    <section id="skills">
+        <section id="skills">
         <h2>Technical Skills</h2>
+        <p style="max-width: 800px; margin: 0 auto 25px auto; text-align: center; font-size: 1.02rem; color: #444;">
+        While I have dedicated significant time building end-to-end projects, I am not claiming expert-level mastery in all listed technologies. 
+        These are the skills I have actively used to develop full-stack applications, machine learning pipelines, and to learn containerization 
+        and deployment processes in real-world style projects.
+    </p>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3>Languages</h3>
-                <p>Python, Java, SQL, Bash, PowerShell, HTML, CSS, JavaScript</p>
+                <h3>Languages Used</h3>
+                <p>Python, Java, SQL, </p>
             </div>
+
             <div class="skill-card">
-                <h3>Frameworks & Tools</h3>
+                <h3>Frameworks & Tools ( Used in projects not claiming to be an expert only familiar) </h3>
                 <p>FastAPI, Flask, Docker, Git, AWS, Netmiko, LangChain, Ollama</p>
             </div>
+
             <div class="skill-card">
-                <h3>Databases & AI/ML</h3>
-                <p>MySQL, SQL Server, MongoDB, FAISS, Neural Networks, RAG, Pandas, yfinance</p>
+                <h3>Databases & AI/ML( Used in projects not claiming to be an expert only familiar)</h3>
+                <p>MySQL, SQL Server, MongoDB, Mongoose,  Neural Networks, RAG, Pandas, </p>
             </div>
+
             <div class="skill-card">
                 <h3>Other</h3>
                 <p>Secure Coding, Networking, Technical Indicators, AWS Cloud Practitioner (in progress)</p>
             </div>
+
+            <!-- New Card -->
+            <div class="skill-card">
+                <h3>Skills Used in Projects( Used in projects not claiming to be an expert only familiar, These helped me learn full stack among other things)</h3>
+                <p>FastAPI, Docker, LangChain, Ollama, FAISS, MongoDB, Mongoose, Pandas, RESTful APIs, Technical Indicators (RSI, MACD, Bollinger Bands)Bash, PowerShell, HTML, CSS, JavaScript, Sentiment Analysis, Pytest, Containerization</p>
+            </div>
         </div>
     </section>
-
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="projects-grid">
+
+            <!-- Stock Prediction Card -->
             <div class="project-card">
                 <h3>Stock Prediction & Market Intelligence Platform</h3>
                 <p><strong>Full-Stack FastAPI + Machine Learning</strong></p>
@@ -74,10 +91,14 @@
                     <li>Fully Dockerized and ready for cloud deployment</li>
                 </ul>
                 <p><strong>Tech:</strong> FastAPI, Docker, Pandas, Neural Networks</p>
-                <a href="https://github.com/dself-dev/stock_prediction" class="btn" target="_blank">GitHub</a>
-                <a href="https://hub.docker.com/r/dennis2026/stock-prediction-app" class="btn" target="_blank">Docker Hub</a>
+                
+                <div class="btn-container">
+                    <a href="https://github.com/dself-dev/stock_prediction" class="btn" target="_blank">GitHub</a>
+                    <a href="https://hub.docker.com/r/dennis2026/stock-prediction-app" class="btn" target="_blank">Docker Hub</a>
+                </div>
             </div>
 
+            <!-- Legal RAG Card -->
             <div class="project-card">
                 <h3>Local Legal Research RAG Agent</h3>
                 <p><strong>Private Offline AI Research Assistant</strong></p>
@@ -87,8 +108,29 @@
                     <li>Runs 100% offline with structured output</li>
                 </ul>
                 <p><strong>Tech:</strong> LangChain, Ollama, FAISS</p>
-                <a href="https://github.com/dself-dev/para_legal_rag_agent" class="btn" target="_blank">GitHub </a>
+                
+                <div class="btn-container">
+                    <a href="https://github.com/dself-dev/para_legal_rag_agent" class="btn" target="_blank">GitHub</a>
+                </div>
             </div>
+
+            <!-- Travlr Card -->
+            <div class="project-card">
+                <h3>Travlr Getaways – Full-Stack Travel Management Application</h3>
+                <p><strong>Node.js, Express, MongoDB, and Handlebars Application</strong></p>
+                <ul>
+                    <li>Built a full-stack travel management application using Node.js, Express.js, MongoDB, Mongoose, and Handlebars</li>
+                    <li>Designed RESTful API endpoints for retrieving all travel packages and individual trips by trip code</li>
+                    <li>Organized routes, controllers, models, and views using the Model-View-Controller architecture</li>
+                    <li>Implemented MongoDB database seeding, reusable Handlebars templates, Express middleware, and custom error handling</li>
+                </ul>
+                <p><strong>Tech:</strong> Node.js, Express.js, MongoDB, Mongoose, Handlebars, JavaScript, REST APIs</p>
+                
+                <div class="btn-container">
+                    <a href="https://github.com/dself-dev/TravelSite-MERN" class="btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -97,7 +139,7 @@
         <div class="experience-item">
             <h3>Janitorial & Maintenance Technician — Essendant, Oaks, PA</h3>
             <p><strong>November 2024 – Present</strong></p>
-            <p>Facility maintenance, electronic work orders, and EPA-compliant hazardous waste handling.</p>
+            <p>Facility maintenance, Daily Cleaning and builing upkeep, and EPA-compliant hazardous waste handling,disposal and logging</p>
         </div>
         <div class="experience-item">
             <h3>Seasonal Customer Service Associate — Target, Oaks, PA</h3>
@@ -105,7 +147,9 @@
             <p>Customer service and cash handling while completing final semester of Computer Science studies.</p>
         </div>
         <div class="experience-item">
-            <h3>General Laborer — Building Memories Custom Contracting</h3>
+            
+            <h3>General Laborer, Estimating — Building Memories Custom Contracting</h3>
+             <p><strong>2018– 2023</strong></p>
             <p>Provided customer service both in-person and via digital channels.</p>
             <p>Performed labor and installations.</p>
             <p>Managed project timelines and coordinated crew activities to optimize costs.</p>
@@ -138,14 +182,13 @@
             <li>AWS Cloud Practitioner (in progress)</li>
         </ul>
     </section>
-    
+
     <!-- ====================== CONTACT SECTION ====================== -->
     <section id="contact">
         <h2>Get In Touch</h2>
         <p>Feel free to reach out if you're hiring or have any questions.</p>
         
         <form action="https://formsubmit.co/dselfinger.dev@gmail.com" method="POST" class="contact-form">
-            
             <div class="form-group">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -164,7 +207,7 @@
             <!-- Anti-spam honeypot -->
             <input type="text" name="_honey" style="display:none;">
 
-            <!-- Redirect after successful submission (change this later if you want) -->
+            <!-- Redirect after successful submission -->
             <input type="hidden" name="_next" value="https://dennisselfingerspage.com/thankyou.html">
 
             <button type="submit" class="btn">Send Message</button>

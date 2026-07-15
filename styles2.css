@@ -47,7 +47,7 @@ nav {
     background: #eee2e2;
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
@@ -85,24 +85,75 @@ h2 {
 }
 
 /* Grid layouts */
-.skills-grid, .projects-grid {
+.skills-grid,
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
 }
 
-.skill-card, .project-card {
+.skill-card,
+.project-card {
     background: white;
     border-radius: 12px;
     padding: 1.8rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Project cards - Flex magic for equal height */
+.project-card {
+    height: 100%;
 }
 
 .project-card h3 {
     color: var(--primary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.35rem;
 }
 
+.project-card p strong {
+    font-size: 1.05rem;
+    color: #222;
+}
+
+.project-card ul {
+    margin: 1rem 0;
+    padding-left: 1.3rem;
+    flex-grow: 1;
+}
+
+.project-card li {
+    margin-bottom: 0.45rem;
+}
+
+/* Buttons container - always at bottom */
+.project-card .btn-container {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #084e92;
+}
+
+/* Experience & other sections */
 .experience-item {
     margin-bottom: 2.5rem;
 }
@@ -120,22 +171,6 @@ h2 {
     font-size: 1.05rem;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    padding: 0.8rem 1.8rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #084e92;
-}
-
 /* Footer */
 footer {
     background: var(--dark);
@@ -144,54 +179,30 @@ footer {
     padding: 2.5rem 1rem;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-    .subtitle {
-        font-size: 1.1rem;
-    }
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    section {
-        padding: 3rem 1rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-    .cert-list {
-        columns: 1;
-    }
+    h1 { font-size: 2.2rem; }
+    .subtitle { font-size: 1.1rem; }
+    nav ul { flex-direction: column; text-align: center; }
+    section { padding: 3rem 1rem; }
+    h2 { font-size: 1.8rem; }
+    .cert-list { columns: 1; }
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 2.5rem 1rem;
-    }
-    .skills-grid, .projects-grid {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* ====================== CONTACT FORM ====================== */
+/* Contact form styling (unchanged but cleaned) */
 #contact {
     background: #f8f9fa;
     padding: 4rem 1.5rem;
 }
 
-#contact h2 {
+#contact h2, #contact p {
     text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-#contact p {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    color: #555;
 }
 
 .contact-form {
@@ -202,15 +213,9 @@ footer {
     gap: 1.2rem;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
 .form-group label {
     font-weight: 600;
     margin-bottom: 6px;
-    color: #333;
 }
 
 .form-group input,
@@ -219,31 +224,10 @@ footer {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
-    transition: border 0.3s;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #0a66c2;
-    outline: none;
+    border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.1);
-}
-
-.contact-form button {
-    align-self: flex-start;
-    padding: 14px 32px;
-    font-size: 1.05rem;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-/* Make it look good on mobile */
-@media (max-width: 768px) {
-    #contact {
-        padding: 3rem 1rem;
-    }
-    
-    .contact-form {
-        gap: 1rem;
-    }
 }
